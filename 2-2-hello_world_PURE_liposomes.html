@@ -182,7 +182,6 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="0-0-get_started.html">Get started here!</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="0-1-what%27s_new_in_v0.2.html">What’s new in v0.2</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="0-2-vids.html">Video</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="1-0-PURE_protocols.html">PURE Protocols</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -370,7 +369,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -386,6 +387,30 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview"><strong>Overview</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials-and-equipment"><strong>Materials and Equipment</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-prepare-stock-buffers-and-lipids"><strong>Step 1: Prepare Stock Buffers and Lipids</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-lipids-in-mineral-oil"><strong>Prepare lipids in mineral oil</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-sugar-stock-stock-solutions"><strong>Prepare sugar stock stock solutions</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-outer-buffer"><strong>Prepare outer buffer</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-assemble-pure-reactions"><strong>Step 2: Assemble PURE Reactions</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pure-reaction-setup"><strong>PURE reaction setup</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-encapsulate-pure-into-liposomes"><strong>Step 3: Encapsulate PURE into Liposomes</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-measure-liposomes"><strong>Step 4: Measure Liposomes</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-protocols"><strong>Background Protocols</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-and-references"><strong>Resources and References</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#credits"><strong>Credits</strong></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -397,11 +422,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="hello-world-pure-liposomes">
 <h1>“Hello, world” PURE Liposomes<a class="headerlink" href="#hello-world-pure-liposomes" title="Link to this heading">#</a></h1>
-<p><strong>Printable Version</strong></p>
+<div class="info admonition">
+<p class="admonition-title"><strong>Printable Version</strong></p>
 <p><a class="reference external" href="https://prod-files-secure.s3.us-west-2.amazonaws.com/21905bfc-36a0-4d06-a531-33b221812f0e/2305c98e-e106-4602-8e68-49704b80bd04/Nucleus_Hello_World_Liposomes_Protocol_v0.1.1.pdf">Nucleus Hello World Liposomes Protocol v0.1.1.pdf</a></p>
-<aside>
-<img src="/icons/light-bulb_gray.svg" alt="/icons/light-bulb_gray.svg" width="40px" /> **Overview**
-</aside>
+</div>
+<section id="overview">
+<h2><strong>Overview</strong><a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>PURE liposomes are the basis of a synthetic cell that can perform the fundamental operations of biology: transcription, and translation.</p>
 <p>In this protocol, you will make the necessary precursors to creating liposomes, assemble a PURE cell-free reaction that will express Green Fluorescent Protein (GFP), and encapsulate it within a liposome. For the outer solution, you will use the same simple sugar solution that was used in <a class="reference external" href="https://www.notion.so/Buffer-in-Buffer-Liposomes-c15ada1e2f19426fa955d73138249eb9?pvs=21">Buffer-in-Buffer Liposomes</a>.</p>
 <p>Successfully built PURE liposomes will start dark and then increase in green fluorescence over time as GFP is produced.</p>
@@ -449,9 +475,9 @@ document.write(`
 </tbody>
 </table>
 </div>
-<aside>
-<img src="/icons/wrench_gray.svg" alt="/icons/wrench_gray.svg" width="40px" /> **Materials and Equipment**
-</aside>
+</section>
+<section id="materials-and-equipment">
+<h2><strong>Materials and Equipment</strong><a class="headerlink" href="#materials-and-equipment" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
@@ -564,11 +590,12 @@ document.write(`
 </tbody>
 </table>
 </div>
-<aside>
-<img src="/icons/iterate_gray.svg" alt="/icons/iterate_gray.svg" width="40px" /> **Step 1: Prepare Stock Buffers and Lipids**
-</aside>
+</section>
+<section id="step-1-prepare-stock-buffers-and-lipids">
+<h2><strong>Step 1: Prepare Stock Buffers and Lipids</strong><a class="headerlink" href="#step-1-prepare-stock-buffers-and-lipids" title="Link to this heading">#</a></h2>
 <p>Stock buffers may be prepared ahead of time, and stored for months. Lipids may also be prepared in advance and stored at 4C for at least 1 month. If you are making buffers and lipids at the same time, begin with the lipids so that they can evaporate while the buffers are being prepared.</p>
-<p><strong>Prepare lipids in mineral oil</strong></p>
+<section id="prepare-lipids-in-mineral-oil">
+<h3><strong>Prepare lipids in mineral oil</strong><a class="headerlink" href="#prepare-lipids-in-mineral-oil" title="Link to this heading">#</a></h3>
 <ul class="contains-task-list simple">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Clean glass syringes.</p>
 <ul class="contains-task-list">
@@ -602,7 +629,9 @@ document.write(`
 </ul>
 </li>
 </ul>
-<p><strong>Prepare sugar stock stock solutions</strong></p>
+</section>
+<section id="prepare-sugar-stock-stock-solutions">
+<h3><strong>Prepare sugar stock stock solutions</strong><a class="headerlink" href="#prepare-sugar-stock-stock-solutions" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Buffer</p></th>
@@ -646,7 +675,9 @@ document.write(`
 </ul>
 </li>
 </ul>
-<p><strong>Prepare outer buffer</strong></p>
+</section>
+<section id="prepare-outer-buffer">
+<h3><strong>Prepare outer buffer</strong><a class="headerlink" href="#prepare-outer-buffer" title="Link to this heading">#</a></h3>
 <ul class="contains-task-list simple">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Make a 800 mM glucose outer solution:</p>
 <ul class="contains-task-list">
@@ -656,10 +687,12 @@ document.write(`
 </ul>
 </li>
 </ul>
-<aside>
-<img src="/icons/iterate_gray.svg" alt="/icons/iterate_gray.svg" width="40px" /> **Step 2: Assemble PURE Reactions**
-</aside>
-<p><strong>PURE reaction setup</strong></p>
+</section>
+</section>
+<section id="step-2-assemble-pure-reactions">
+<h2><strong>Step 2: Assemble PURE Reactions</strong><a class="headerlink" href="#step-2-assemble-pure-reactions" title="Link to this heading">#</a></h2>
+<section id="pure-reaction-setup">
+<h3><strong>PURE reaction setup</strong><a class="headerlink" href="#pure-reaction-setup" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Component</strong></p></th>
@@ -716,12 +749,13 @@ document.write(`
 </ul>
 </li>
 </ul>
-<aside>
-<img src="/icons/iterate_gray.svg" alt="/icons/iterate_gray.svg" width="40px" /> **Step 3: Encapsulate PURE into Liposomes**
-</aside>
-<ul class="contains-task-list">
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Set up a microfuge tube rack, with three 1.5 mL microfuge tubes per liposome encapsulation:</p>
+</section>
+</section>
+<section id="step-3-encapsulate-pure-into-liposomes">
+<h2><strong>Step 3: Encapsulate PURE into Liposomes</strong><a class="headerlink" href="#step-3-encapsulate-pure-into-liposomes" title="Link to this heading">#</a></h2>
 <ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Set up a microfuge tube rack, with three 1.5 mL microfuge tubes per liposome encapsulation:</p>
+<ul class="contains-task-list">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Number the tubes per the number of reactions assembled in Step 2.</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  For each reaction, label the three tubes:</p>
 <ul class="contains-task-list">
@@ -732,48 +766,70 @@ document.write(`
 </li>
 </ul>
 </li>
-<li><p><strong>Tips</strong></p>
-<ul class="simple">
-<li><p>We have run reactions with as little as 50 uL outer solution, 50 uL oil phase, and 10 uL inner solution.</p></li>
 </ul>
-</li>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="dropdown admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We have run reactions with as little as 50 uL outer solution, 50 uL oil phase, and 10 uL inner solution.</p>
+</div>
+</aside>
+<ul class="contains-task-list simple">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Add 150 uL of the lipid / oil mixture to tubes labelled <strong>E</strong>.</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Add 150 uL of 800 mM glucose outer solution to each of the tubes labelled <strong>T</strong> and <strong>L</strong>.</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Emulsify each reaction in its appropriate oil tube:</p>
-<ul class="contains-task-list simple">
+<ul class="contains-task-list">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Add 30 uL PURE reaction its matching <strong>E</strong> tube.</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Mix the lipid–oil and PURE reaction by running the tube along a row of empty slots on the microfuge tube holder.
 Run along the row 5–10 times, until the solution forms a stable emulsion and is an even milky color.</p></li>
 </ul>
 </li>
-<li><p><strong>Notes</strong></p>
+</ul>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="dropdown admonition note">
+<p class="admonition-title">Note</p>
 <p>Liposome size is related to the speed and intensity of these two mixing steps. If you want smaller liposomes, you can vortex more aggressively; if you want bigger liposomes you should create the emulsion gently and emulsify for less time.</p>
-</li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Immediately layer each emulsion over the transfer solution.</p>
+</div>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="dropdown admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Imagine that you’re making a <a class="reference external" href="https://www.seriouseats.com/how-to-make-layered-drinks-cocktail-technique-pousse-cafe">delicious layered cocktail</a>.</p>
+</div>
+</aside>
 <ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Immediately layer each emulsion over the transfer solution.</p>
+<ul class="contains-task-list">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Pipette 150 uL from tube <strong>E</strong> slowly down the side of the matching tube <strong>T</strong>.</p></li>
 </ul>
 </li>
-<li><p><strong>Tips</strong></p>
-<p>Imagine that you’re making a <a class="reference external" href="https://www.seriouseats.com/how-to-make-layered-drinks-cocktail-technique-pousse-cafe">delicious layered cocktail</a>.</p>
-</li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Centrifuge <strong>T</strong> tubes at 9000 g for 10 min at room temperature to pellet the liposomes:</p>
-<ul class="contains-task-list simple">
+<ul class="contains-task-list">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Align the hinges of each microfuge tube towards the outside of the centrifuge rotor, so that the final pellet location will be indicated by the tube hinge.</p></li>
 </ul>
 </li>
-<li><p><strong>Tips</strong></p>
-<ul class="simple">
-<li><p>Align the hinges of your microfuge tubes towards the outside of the centrifuge. This provides a visual marker of where the pellet will be in each tube if it is difficult or impossible to see.</p></li>
 </ul>
-</li>
-<li><p><strong>Notes</strong></p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="dropdown admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Align the hinges of your microfuge tubes towards the outside of the centrifuge. This provides a visual marker of where the pellet will be in each tube if it is difficult or impossible to see.</p>
+</div>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="dropdown admonition note">
+<p class="admonition-title">Note</p>
 <p>If you want smaller liposomes, you can try lower spin speeds.</p>
 <p>We have tried 3000g and 6000g with success, although the pellet formed is not as stable (it streaks the side of the Eppendorf tube, although the liposomes imaged under the microscope seem the same).</p>
 <p>Alternatively, if you want very small liposomes (less than 1um in diameter), you can also try letting the liposomes settle for a day. The big liposomes will settle to the bottom, leaving small liposomes floating around on top.</p>
-</li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Extract the liposomes from each <strong>T</strong> tube:</p>
+</div>
+</aside>
 <ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Extract the liposomes from each <strong>T</strong> tube:</p>
+<ul class="contains-task-list">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Remove the oil layer from the top of each <strong>T</strong> tube by gently pipetting with a 1000 uL pipette set to 150 uL.</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Identify location of the liposome pellet at the corner of the tube where the side wall angles toward the bottom, directly below the hinge.</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Gently extract liposomes by pipetting 50 uL of pellet and outer solution from beside the pellet location.</p></li>
@@ -781,14 +837,22 @@ Run along the row 5–10 times, until the solution forms a stable emulsion and i
 </ul>
 </li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Hold liposomes on ice until you are prepared to begin measurement.</p></li>
-<li><p><strong>Tips</strong></p>
+</ul>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="dropdown admonition tip">
+<p class="admonition-title">Tip</p>
 <ul class="simple">
 <li><p>Go slowly due to the viscosity of the oil.</p></li>
 <li><p>Attempt to pipette from near the surface of the oil, moving the tip down as the oil is removed. If you pull from directly near the oil-water interface you will draw the lipid layer and the aqueous phase into the pipette.</p></li>
 <li><p>It is unlikely that you will be able to remove absolutely all of the oil. Leave as little as possible.</p></li>
 </ul>
-</li>
-<li><p><strong>Tips</strong></p>
+</div>
+</aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="dropdown admonition tip">
+<p class="admonition-title">Tip</p>
 <ul class="simple">
 <li><p>Make sure to submerge the oil-covered pipette tip as little as possible into the fresh solution: discard the tip from the previous step and use a new one.</p></li>
 <li><p>A smaller pipette tip will pick up less oil from the oil-water interface.</p></li>
@@ -796,11 +860,11 @@ Run along the row 5–10 times, until the solution forms a stable emulsion and i
 <li><p>If a pellet is not visible, simply remove 50 uL of the aqueous solution from the bottom of the tube. Ideally, target your pipette to where the pellet would be.</p></li>
 <li><p>If your yield is low, directly analyse the 50 uL of solution you removed, without diluting it in the fresh outer buffer.</p></li>
 </ul>
-</li>
-</ul>
-<aside>
-<img src="/icons/iterate_gray.svg" alt="/icons/iterate_gray.svg" width="40px" /> **Step 4: Measure Liposomes**
+</div>
 </aside>
+</section>
+<section id="step-4-measure-liposomes">
+<h2><strong>Step 4: Measure Liposomes</strong><a class="headerlink" href="#step-4-measure-liposomes" title="Link to this heading">#</a></h2>
 <ul class="contains-task-list simple">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Prepare a 18-well imaging slide for microscopy.</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Pipette 20 uL of each liposome sample into a well on the slide.</p>
@@ -835,17 +899,17 @@ Run along the row 5–10 times, until the solution forms a stable emulsion and i
 </li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Capture images of liposomes.</p></li>
 </ul>
-<aside>
-<img src="/icons/merge_gray.svg" alt="/icons/merge_gray.svg" width="40px" /> **Background Protocols**
-</aside>
+</section>
+<section id="background-protocols">
+<h2><strong>Background Protocols</strong><a class="headerlink" href="#background-protocols" title="Link to this heading">#</a></h2>
 <ul class="contains-task-list simple">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Prepare lipids for use in encapsulation: <a class="reference external" href="https://www.notion.so/Lipid-Preparation-baed10d160fc410a8b1def6154257b54?pvs=21">Lipid Preparation</a></p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Prepare inner and outer buffers: <a class="reference external" href="https://www.notion.so/PURE-inner-and-outer-solution-157a348c3f1e44ffb81538c1e953eb9e?pvs=21">PURE inner and outer solution</a></p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox">  Prepare <a class="reference external" href="https://www.notion.so/Make-Energy-Mix-c21a30ad7dc140a4aa44bdd9c1bea375?pvs=21">Make Energy Mix</a></p></li>
 </ul>
-<aside>
-<img src="/icons/book_gray.svg" alt="/icons/book_gray.svg" width="40px" /> **Resources and References**
-</aside>
+</section>
+<section id="resources-and-references">
+<h2><strong>Resources and References</strong><a class="headerlink" href="#resources-and-references" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Other Protocols</p>
 <ul>
@@ -867,9 +931,9 @@ Run along the row 5–10 times, until the solution forms a stable emulsion and i
 </ul>
 </li>
 </ul>
-<aside>
-<img src="/icons/megaphone_gray.svg" alt="/icons/megaphone_gray.svg" width="40px" /> **Credits**
-</aside>
+</section>
+<section id="credits">
+<h2><strong>Credits</strong><a class="headerlink" href="#credits" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Developers</p>
 <ul>
@@ -883,6 +947,7 @@ Run along the row 5–10 times, until the solution forms a stable emulsion and i
 </ul>
 </li>
 </ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -930,6 +995,37 @@ Run along the row 5–10 times, until the solution forms a stable emulsion and i
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview"><strong>Overview</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials-and-equipment"><strong>Materials and Equipment</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-prepare-stock-buffers-and-lipids"><strong>Step 1: Prepare Stock Buffers and Lipids</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-lipids-in-mineral-oil"><strong>Prepare lipids in mineral oil</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-sugar-stock-stock-solutions"><strong>Prepare sugar stock stock solutions</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-outer-buffer"><strong>Prepare outer buffer</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-assemble-pure-reactions"><strong>Step 2: Assemble PURE Reactions</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pure-reaction-setup"><strong>PURE reaction setup</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-encapsulate-pure-into-liposomes"><strong>Step 3: Encapsulate PURE into Liposomes</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-measure-liposomes"><strong>Step 4: Measure Liposomes</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-protocols"><strong>Background Protocols</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-and-references"><strong>Resources and References</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#credits"><strong>Credits</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
