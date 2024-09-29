@@ -4,5 +4,17 @@
 format: jb-book
 root: intro
 chapters:
-- file: 1-get_started
+- file: 0-0-get_started
+  sections:
+  - file: 0-1-what's_new_in_v0.2
+
+- file: 1-0-PURE_protocols
+  sections:
+  - file: 1-1-make_protein_mix
+  - file: 1-2-ribosome_narrative
+
+- file: 2-0-container_protocols
+  sections:
+  - file: 2-1-PURE_inner_and_outer_solution
+  - file: 2-2-hello_world_PURE_liposomes
 

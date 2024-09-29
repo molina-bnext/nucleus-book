@@ -1,0 +1,672 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Get started here! &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '0-0-get_started';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="What’s new in v0.2" href="0-1-what%27s_new_in_v0.2.html" />
+    <link rel="prev" title="Nucleus" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/glyph-green.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/glyph-green.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Nucleus
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Get started here!</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="0-1-what%27s_new_in_v0.2.html">What’s new in v0.2</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="1-0-PURE_protocols.html">PURE Protocols</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="1-1-make_protein_mix.html">Make protein mix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1-2-ribosome_narrative.html">Ribosomes Notebook</a></li>
+
+
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="2-0-container_protocols.html">Container protocols</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="2-1-PURE_inner_and_outer_solution.html">PURE inner and outer solution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2-2-hello_world_PURE_liposomes.html">“Hello, world” PURE Liposomes</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F0-0-get_started.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/0-0-get_started.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Get started here!</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome">Welcome!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#whats-on-nucleus">What’s on Nucleus?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hello-world">“Hello, world!”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-with-synthetic-cells">Developing with synthetic cells 🛠️</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="get-started-here">
+<h1>Get started here!<a class="headerlink" href="#get-started-here" title="Link to this heading">#</a></h1>
+<section id="welcome">
+<h2>Welcome!<a class="headerlink" href="#welcome" title="Link to this heading">#</a></h2>
+<p>Synthetic cells are a powerful tool for designing and building biotechnology. Assembling cells “bottom-up” from individually purified components allows us to build defined systems and test every part, enabling modular, scaleable engineering.</p>
+<p>Building a synthetic cell from scratch involves three main processes:</p>
+<ol class="arabic simple">
+<li><p>Assembling a cytosol.</p></li>
+<li><p>Adding functional modules (encoded in DNA) to the cytosol.</p></li>
+<li><p>Encapsulating the cytosol in a lipid membrane.</p></li>
+</ol>
+<p>Nucleus aims to provide a single, integrated site providing all the open protocols, materials, and tools required to support these processes.</p>
+</section>
+<section id="whats-on-nucleus">
+<h2>What’s on Nucleus?<a class="headerlink" href="#whats-on-nucleus" title="Link to this heading">#</a></h2>
+<p>We divide each Nucleus release into four broad categories:</p>
+<p><strong>Container:</strong> the means to separate the inside of a synthetic cell from its environment.</p>
+<p><strong>Cytosol:</strong> the mixture within a synthetic cell.</p>
+<p><strong>Content:</strong> biological programs which operate in the synthetic cell.</p>
+<p><strong>Synthetic Cell:</strong> containers, cytosols, and content combined together (”integrated”) into a particular working cell.</p>
+<p>You can read more about each category below. For a more detailed discussion of the current status of Nucleus and its contents, please see <a class="reference external" href="https://www.notion.so/What-s-new-in-v0-2-0-71c57989721b4f1f95af1a188907626a?pvs=21">What’s new in v0.2.0</a>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #d8dcf4; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Container</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Containers separate the interior of synthetic cells (cytosol and DNA) from the exterior environment.</p>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>What’s in Container:</strong></p>
+<p><a class="reference external" href="https://www.notion.so/Container-Documentation-240c571e846945428c158d75350e5ffd?pvs=21">Container Documentation</a></p>
+<p><a class="reference external" href="https://www.notion.so/Container-Protocols-55946f13bc304b40bf3ca0dc87bd7cd9?pvs=21">Container Protocols</a></p>
+</aside>
+<p>The process of putting these interior contents inside a container is called “encapsulation”. There are many types of containers and multiple ways to encapsulate things for any given type of container.</p>
+<p>Nucleus currently includes one type of container: lipid vesicles (or liposomes).</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #e8ecdc; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Cytosol</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Cytosol is the aqueous mixture of all the molecules that you want inside your cell.</p>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>What’s in Cytosol:</strong></p>
+<p><a class="reference external" href="https://www.notion.so/Cytosol-Documentation-3f6df25b984a4e64b5e3b37a2da8b07e?pvs=21">Cytosol Documentation</a></p>
+<p><a class="reference external" href="https://www.notion.so/PURE-Protocols-0cd5d3af44aa4d5e85871a75a7c9161b?pvs=21">PURE Protocols</a></p>
+</aside>
+<p>Cytosols can be very simple (e.g., water plus dye) or extraordinarily complex (e.g., cell lysate). Cytosols provide the molecular machinery and resources for a synthetic cell to work. In order for your cell to do what you want, you have to pick the right cytosol.</p>
+<p>If you need transcription and translation, we recommend using PURE, a cell free expression system built from individually purified components. DNA plasmids encoding the thirty-six (36) proteins composing the PURE system, as well as plasmids which operate in PURE, are included in the Nucleus DNA distribution.</p>
+<p>If you need a simple cytosol to prototype other processes (e.g., encapsulation) we recommend using water + HPTS, a fluorescent dye (see <a class="reference external" href="https://www.notion.so/Container-Protocols-55946f13bc304b40bf3ca0dc87bd7cd9?pvs=21">Container Protocols</a> / <a class="reference external" href="https://www.notion.so/Inner-and-Outer-Solutions-34b49e957050422e980002052dd72b80?pvs=21">Inner and Outer Solutions</a>  for more details).</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #f8d4d4; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Content</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Content means two things: Abstractly, content includes all the biological functions that you might want to augment your synthetic cells with, logically separated into “modules”. Concretely, content also means the explicit implementations of those functions.</p>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>What’s in Content:</strong></p>
+<p><a class="reference external" href="https://www.notion.so/Modules-20f5eabc66874b26aa361ea0e22ff257?pvs=21">Modules</a></p>
+<p><a class="reference external" href="https://www.notion.so/DNA-Distribution-6d3e45ae88b84a038828b815ed54e8bc?pvs=21">DNA Distribution</a></p>
+</aside>
+<p>Nucleus includes both abstract designs of modules and explicit implementations of those modules in DNA. All DNA content on Nucleus is open source and released under the OpenMTA, meaning you can share and remix these sequences as you see fit, for personal, academic, or commercial use.</p>
+<p>Nucleus now includes two detector modules: lacO, a lactose responsive expression system; and tetO, a tetracycline responsive system.</p>
+<p>Additionally, Nucleus includes a collection of generally useful open source DNA parts, including protein reporters (fluorescent and colorimetric), bacterial promoters and translation initiation sites for building new modules, and an open source plasmid backbone called pOpen. All these parts are designed to be composable with MoClo assembly, and are compatible with a number of other common DNA assembly methods.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #f0dcf4; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Synthetic cell</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Synthetic cells are the final result of taking cytosols, adding content, and encapsulating them in a container. Synthetic cells can be as simple as liposomes encapsulating water, as complicated as you like, and one day, we hope, as capable as and more capable than  natural cells.</p>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>What’s in Synthetic Cell:</strong></p>
+<p><a class="reference external" href="https://www.notion.so/Booting-up-a-simple-synthetic-cell-cbafa6d239714913a3186cd07a9d01aa?pvs=21">Booting up a simple synthetic cell</a></p>
+<p><a class="reference external" href="https://www.notion.so/Detector-cells-55bf87b1319b448d901a3411c6c31786?pvs=21">Detector cells</a></p>
+</aside>
+<p>Nucleus now includes protocols to make two (2) different types of integrated cells.</p>
+<p><a class="reference external" href="https://www.notion.so/Booting-up-a-simple-synthetic-cell-cbafa6d239714913a3186cd07a9d01aa?pvs=21">Booting up a simple synthetic cell</a></p>
+<p><a class="reference external" href="https://www.notion.so/Detector-cells-55bf87b1319b448d901a3411c6c31786?pvs=21">Detector cells</a></p>
+<p>Getting started? Follow this protocol: <a class="reference external" href="https://www.notion.so/Booting-up-a-simple-synthetic-cell-cbafa6d239714913a3186cd07a9d01aa?pvs=21">Booting up a simple synthetic cell</a>. You will take commercially available cytosol (NEB PURExpress) and encapsulate it in a simple liposome.</p>
+<p>Want to implement the detection modules? We are developing the following protocol: <a class="reference external" href="https://www.notion.so/Detector-cells-55bf87b1319b448d901a3411c6c31786?pvs=21">Detector cells</a> . You will make cells capable of detecting and responding to lactose and tetracycline.</p>
+</section>
+<section id="hello-world">
+<h2>“Hello, world!”<a class="headerlink" href="#hello-world" title="Link to this heading">#</a></h2>
+<p><strong>Booting up a simple synthetic cell 👋🏾</strong></p>
+<p>If you’re new to building synthetic cells, it can be a challenge to learn multiple new protocols, get them to work, and then get them to work <em>together</em>. We recommend practicing these protocols by building the “simplest” synthetic cell.</p>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <video width="640" height="480" 
+        src="/Users/antonmolina/Documents/code/nucleus-book-local/nucleus-book/videos/syntheticcell_GFP_expression.mp4"
+        controls>
+    </video>
+</div>
+<p>The simplest cytosol to start working with with is the PURE system. PURE is a defined set of proteins, RNA, and small molecules that together can transcribe DNA into RNA and translate RNA into proteins. Multiple commercial implementations of PURE are available, but we recommend PURExpress.</p>
+<p>The simplest DNA module to start working with is a fluorescent reporter, like amajLime (included in the Nucleus DNA collection). Whatever module you use, make sure that it has an appropriate promoter for the cytosol that you’ve chosen. PURE expresses proteins under the T7 RNA Polymerase promoter (pT7).</p>
+<p>The simplest encapsulation method involves phase-transfer with POPC lipids (mixed with rhodamine tagged lipids for visualization). Once you have all the materials, implementing your first synthetic cell should take a day. A time-lapse video of simple synthetic cells is shown on the right (40x magnification).</p>
+<p>Check out <a class="reference external" href="https://www.notion.so/Booting-up-a-simple-synthetic-cell-cbafa6d239714913a3186cd07a9d01aa?pvs=21">Booting up a simple synthetic cell</a>.</p>
+</section>
+<section id="developing-with-synthetic-cells">
+<h2>Developing with synthetic cells 🛠️<a class="headerlink" href="#developing-with-synthetic-cells" title="Link to this heading">#</a></h2>
+<p>For full-stack development with synthetic cells, you’ll want to:</p>
+<ul class="simple">
+<li><p>Build defined cytoplasm directly from individual proteins, RNA, and small molecules. Nucleus includes DNA encoding the thirty-six proteins composing the PURE system. Information for getting started can be found here: <a class="reference external" href="https://www.notion.so/PURE-Guide-0991591e9f474a5bbc934dc141503ae2?pvs=21">PURE Guide</a>.</p></li>
+<li><p>Develop and test your own modules. Nucleus v0.1 includes a range of DNA module reporters, including validation modules and detector modules capable of simple logic. It also includes a set of level-matched T7 promoters for expression control. Information can be found here: <a class="reference external" href="https://www.notion.so/DNA-Distribution-6d3e45ae88b84a038828b815ed54e8bc?pvs=21">DNA Distribution</a>.</p></li>
+<li><p>Encapsulate cytosol and modules. Nucleus v0.1 supports encapsulation with the phase transfer method &amp; fluorescent microscope-based imaging. Get started here: <a class="reference external" href="https://www.notion.so/Container-Protocols-55946f13bc304b40bf3ca0dc87bd7cd9?pvs=21">Container Protocols</a>.</p></li>
+</ul>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Nucleus</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="0-1-what%27s_new_in_v0.2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">What’s new in v0.2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome">Welcome!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#whats-on-nucleus">What’s on Nucleus?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hello-world">“Hello, world!”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-with-synthetic-cells">Developing with synthetic cells 🛠️</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
