@@ -1,7 +1,5 @@
 # Get started here!
 
-
-
 ## Welcome!
 
 Synthetic cells are a powerful tool for designing and building biotechnology. Assembling cells “bottom-up” from individually purified components allows us to build defined systems and test every part, enabling modular, scaleable engineering. 
@@ -132,12 +130,6 @@ Want to implement the detection modules? We are developing the following protoco
 **Booting up a simple synthetic cell 👋🏾**
 
 If you’re new to building synthetic cells, it can be a challenge to learn multiple new protocols, get them to work, and then get them to work *together*. We recommend practicing these protocols by building the “simplest” synthetic cell. 
-<div style="display: flex; justify-content: center; align-items: center;">
-    <video width="640" height="480" 
-        src="/Users/antonmolina/Documents/code/nucleus-book-local/nucleus-book/videos/syntheticcell_GFP_expression.mp4"
-        controls>
-    </video>
-</div>
 
 The simplest cytosol to start working with with is the PURE system. PURE is a defined set of proteins, RNA, and small molecules that together can transcribe DNA into RNA and translate RNA into proteins. Multiple commercial implementations of PURE are available, but we recommend PURExpress. 
 

@@ -81,4 +81,3 @@ Building synthetic cells that can sense and respond
 Release notes
 
 This is the [welcome](welcome-label)
-
