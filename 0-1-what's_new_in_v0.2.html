@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Content with notebooks &#8212; My sample book</title>
+    <title>What’s new in v0.2 &#8212; My sample book</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '0-1-what's_new_in_v0.2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PURE Protocols" href="1-0-PURE_protocols.html" />
+    <link rel="prev" title="Get started here!" href="0-0-get_started.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,8 +124,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -181,9 +179,9 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="0-0-get_started.html">Get started here!</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="0-1-what%27s_new_in_v0.2.html">What’s new in v0.2</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="0-0-get_started.html">Get started here!</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">What’s new in v0.2</a></li>
 
 </ul>
 </details></li>
@@ -271,7 +269,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F0-1-what's_new_in_v0.2.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -301,7 +299,7 @@
       
       
       
-      <li><a href="_sources/notebooks.ipynb" target="_blank"
+      <li><a href="_sources/0-1-what's_new_in_v0.2.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -311,7 +309,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -385,7 +383,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Content with notebooks</h1>
+    <h1>What’s new in v0.2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -395,10 +393,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">What’s new in v0.2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#new-to-v0-2-0">New to v0.2.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-development">In Development</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -409,83 +410,159 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="content-with-notebooks">
-<h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Link to this heading">#</a></h1>
-<p>You can also create content with Jupyter Notebooks. This means that you can include
-code blocks and their outputs in your book.</p>
-<section id="markdown-notebooks">
-<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Link to this heading">#</a></h2>
-<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
-<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
-<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-math^{blocks}
-\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
-\end{split}\]</div>
-<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="what-s-new-in-v0-2">
+<h1>What’s new in v0.2<a class="headerlink" href="#what-s-new-in-v0-2" title="Link to this heading">#</a></h1>
+<p>This is the release of v0.2.0, which includes stable Nucleus content (i.e., passing our internal testing and generally working).</p>
+<div class="attention admonition">
+<p class="admonition-title">Release</p>
+<p>August 6, 2024</p>
+</div>
+<hr class="docutils" />
+<p>In the v0.2.0 release we have validated the Nucleus DNA collection and used it to successfully make PURE; we have upgraded the corresponding <a class="reference external" href="https://www.notion.so/PURE-Protocols-0cd5d3af44aa4d5e85871a75a7c9161b?pvs=21">protocols for PURE production</a>. Nucleus PURE now achieves 70% of the protein yield of commercially-available PURE, and we anticipate its yield to rise as we further optimize the system.</p>
+<aside class="sidebar">
+<figure class="align-default" id="fig1">
+<img alt="_images/v0.2_img1.png" src="_images/v0.2_img1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Increase in performance of Nucleus PURE.</span><a class="headerlink" href="#fig1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>We have made great strides on the detector cell, demonstrating that the<a class="reference external" href="https://www.notion.so/TetR-Inducible-Module-6017996fbe48465ea29aee31e8fe7101?pvs=21">TetR Inducible Module</a> works <em>in vitro</em> and constructing a first integrated <a class="reference external" href="https://www.notion.so/Detector-cells-55bf87b1319b448d901a3411c6c31786?pvs=21">TetR Detector Cell</a>. We’re presently working on optimizing and further improving functionality, and will be sharing a first protocol in the coming weeks. Work has also begun on our first emitter module: the <a class="reference external" href="https://www.notion.so/Quorum-sensing-Emitter-0d3ed8a7378242dd9c2a42009bacd629?pvs=21">Quorum-sensing Emitter</a>.</p>
+<p>In terms of tools, we’ve released the first version of our Kinetics Analysis Toolbox on Github, allowing standard kinetic parameters to be determined from plate reader time series data. This follows on from conversations and community discussions around standard measurement techniques for cell-free and liposome data, and we hope the tool will feed into an emerging information standard for comparable data sharing. We’ve also <a class="reference external" href="https://www.notion.so/The-effect-of-DNA-concentration-on-expression-in-liposomes-fa68677f9b1b4e67bd63344f710b4c1d?pvs=21">shared some data</a> from our liposome analysis toolbox; we’re still working on making the tool easier to use—expect it in an upcoming release.</p>
+<figure class="align-default" id="fig2">
+<img alt="_images/v0.2_img2.png" src="_images/v0.2_img2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Kinetic analysis of plamGFP expression in liposomes.</span><a class="headerlink" href="#fig2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Container protocols have been updated for clarity and ease of use, and we have added a <a class="reference external" href="https://www.notion.so/Liposome-workshop-module-677c525fbb8d4a5e8da2f6f7b46ed3dc?pvs=21">new education module</a> to get started building liposomes and synthetic cells. We used this education module to <a class="reference external" href="https://www.notion.so/Liposome-construction-workshop-at-Caltech-818c58b9b1d143f180e3c31cf1c2d003?pvs=21">teach 6 undergraduates how to make liposomes</a>, with all of the students achieving success.</p>
 </section>
-<section id="myst-markdown">
-<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
-out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
-or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
-</section>
-<section id="code-blocks-and-outputs">
-<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Link to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;contextlib.ExitStack at 0x107cfd130&gt;
-</pre></div>
+<section class="tex2jax_ignore mathjax_ignore" id="new-to-v0-2-0">
+<h1>New to v0.2.0<a class="headerlink" href="#new-to-v0-2-0" title="Link to this heading">#</a></h1>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #dfe2e8; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Development</strong>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
-
-<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
-<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
-
-
-<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
-<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">.5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
-</pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="_images/a1f921671edf3589de5edfd0994b3d5705c3ea79ea5b69ca7c1a7e2520086ba7.png" src="_images/a1f921671edf3589de5edfd0994b3d5705c3ea79ea5b69ca7c1a7e2520086ba7.png" />
+</div>
+<ul class="simple">
+<li><p>Our kinetics analysis toolbox is now available <a class="reference external" href="https://github.com/bnext-bio/nucleus/tree/main/cdk/analysis/cytosol-analysis">on GitHub</a>. This toolbox allows you to analyze time-series plate reader information to derive kinetic parameters such as lag time, maximum velocity, and steady state.</p></li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #d7a2e2; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Community</strong>
 </div>
 </div>
-<p>There is a lot more that you can do with outputs (such as including interactive outputs)
-with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
+</div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>New blog post documenting our workshop at Caltech: <a class="reference external" href="https://www.notion.so/Liposome-construction-workshop-at-Caltech-818c58b9b1d143f180e3c31cf1c2d003?pvs=21">Liposome construction workshop at Caltech</a>. Six undergraduate students successfully made “Hello, world” PURE liposomes in two days.</p></li>
+<li><p>Introduces <a class="reference external" href="https://www.notion.so/Nucleus-Community-Contributions-0cc4d80c9448403f9f308b983999bd0e?pvs=21">Nucleus Community Contributions</a>: a place for community members to share Modules and other components that are complementary to the Nucleus Ecosystem.</p>
+<ul>
+<li><p><a class="reference external" href="https://www.notion.so/MphR-Sensing-Module-Stemloop-0fbed2b3c77f4350b46174b7218cf224?pvs=21">MphR Sensing Module (Stemloop)</a>: our first community module. This module uses the allosteric transcription factor MphR to sense macrolides.</p></li>
+</ul>
+</li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #d8dcf4; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Container</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Updates Liposome protocols for <a class="reference external" href="https://www.notion.so/Buffer-in-Buffer-Liposomes-c15ada1e2f19426fa955d73138249eb9?pvs=21">Buffer-in-Buffer Liposomes</a> and <a class="reference external" href="https://www.notion.so/Hello-world-PURE-Liposomes-412dfbe9ffd941bfab16b69ec866de27?pvs=21">“Hello, world” PURE Liposomes</a> for clarity and to include our latest protocol improvements; updates Bills of Materials; and adds protocol timelines and and printable PDFs of protocols.</p></li>
+<li><p>Publishes <a class="reference external" href="https://www.notion.so/The-effect-of-DNA-concentration-on-expression-in-liposomes-fa68677f9b1b4e67bd63344f710b4c1d?pvs=21">The effect of DNA concentration on expression in liposomes</a>. In this post, we varied DNA concentration and measured the effect on GFP expression in liposomes. This post also highlights our liposome analysis toolbox (in-development), and discusses some interesting behavior of populations of liposome.</p></li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #e8ecdc; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Cytosol</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>PURE documentation and protocols describing the process for making Nucleus PURE v0.2.0, including:</p>
+<ul class="simple">
+<li><p>A new end-to-end protocol describing purification and assembly of proteins into PURE protein mix (see <a class="reference external" href="https://www.notion.so/Make-Protein-Mix-78b432dd513d4f2e81a0bdf18e3c8de5?pvs=21">Make Protein Mix</a>).</p></li>
+<li><p>Updated Bills of Materials: now includes all materials used to build Nucleus PURE; updated links, part numbers, and costs; and edits for consistency.</p></li>
+<li><p>Updated  <a class="reference external" href="https://www.notion.so/Exchange-Buffers-and-Concentrate-by-Spin-Filtration-1b5fcf32943144c4a7a436a9efb173ce?pvs=21">Exchange Buffers and Concentrate by Spin Filtration</a> protocol: we now recommend exchanging buffers using centrifugal filters rather than desalting columns.</p></li>
+<li><p>New protocols for analysis, specifically documenting the use of a <a class="reference external" href="https://www.notion.so/Pierce660-Assay-d2328927b1484016805b7fc6692fcdbc?pvs=21">Pierce660 Assay</a> as an improvement over BCA Assay for protein quantification.</p></li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #f8d4d4; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Content</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Updates Detector modules with clearer design drawings and new implementation data: <a class="reference external" href="https://www.notion.so/Modules-20f5eabc66874b26aa361ea0e22ff257?pvs=21">Modules</a>.</p></li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div style="background-color: #f0dcf4; padding: 0; margin: 0; height: 100%; padding: 1em;">
+    <strong>Synthetic cell</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Demonstrates a functional TetR Detector Cell. See <a class="reference external" href="https://www.notion.so/Detector-cells-55bf87b1319b448d901a3411c6c31786?pvs=21">Detector cells</a>. We are actively working on further optimization and sharing a first protocol.</p></li>
+</ul>
+<section id="in-development">
+<h2>In Development<a class="headerlink" href="#in-development" title="Link to this heading">#</a></h2>
+<p>We are actively developing the following features. They are intended to be fully released in a future release. Keep up to date on the current status of these features by joining our mailing list at <a class="reference external" href="http://bnext.bio/build">bnext.bio/build</a>.</p>
+<ul class="simple">
+<li><p>The Emitter Cell module is under active development, with DNA constructs synthesized and experiments beginning. See <a class="reference external" href="https://www.notion.so/Quorum-sensing-Emitter-0d3ed8a7378242dd9c2a42009bacd629?pvs=21">Quorum-sensing Emitter</a> for a description of our first Emitter Cell module.</p></li>
+<li><p>We are actively onboarding new contributors to the <a class="reference external" href="https://www.notion.so/Nucleus-Community-Contributions-0cc4d80c9448403f9f308b983999bd0e?pvs=21">Nucleus Community Contributions</a> collection, where people can share information, modules, and other information outside of the main Nucleus distribution. Get in touch if you’d like to contribute.</p></li>
+</ul>
+<div class="warning admonition">
+<p class="admonition-title">Known issues</p>
+<p>Two (2) of the PURE genes (ArgRS and LeuRS) were not synthesized for the Nucleus DNA v0.1.0 release and will be included in the v0.2.0 DNA Distribution.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">More information</p>
+<ul class="simple">
+<li><p>Code and DNA designs are available on <a class="reference external" href="https://github.com/bnext-bio/nucleus/tree/main">Github</a>.</p></li>
+<li><p>To ask questions or participate in the development of Nucleus, join our <a class="reference external" href="https://groups.google.com/a/bnext.bio/g/nucleus-discuss">nucleus-discuss mailing list</a>.</p></li>
+</ul>
+</div>
 </section>
 </section>
 
@@ -519,6 +596,24 @@ with your book. For more information about this, see <a class="reference externa
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="0-0-get_started.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Get started here!</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="1-0-PURE_protocols.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">PURE Protocols</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -535,10 +630,13 @@ with your book. For more information about this, see <a class="reference externa
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">What’s new in v0.2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#new-to-v0-2-0">New to v0.2.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-development">In Development</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
