@@ -44,9 +44,6 @@ Containers separate the interior of synthetic cells (cytosol and DNA) from the e
 ```
 
 
-
-
-
 The process of putting these interior contents inside a container is called “encapsulation”. There are many types of containers and multiple ways to encapsulate things for any given type of container.
 
 Nucleus currently includes one type of container: lipid vesicles (or liposomes). 
@@ -130,6 +127,10 @@ Want to implement the detection modules? We are developing the following protoco
 **Booting up a simple synthetic cell 👋🏾**
 
 If you’re new to building synthetic cells, it can be a challenge to learn multiple new protocols, get them to work, and then get them to work *together*. We recommend practicing these protocols by building the “simplest” synthetic cell. 
+
+<div style="text-align: center;">
+    <iframe width="560" height="315" src="https://youtube.com/embed/6VzvmYjH-4c?feature=share" frameborder="0" allowfullscreen></iframe>
+</div>
 
 The simplest cytosol to start working with with is the PURE system. PURE is a defined set of proteins, RNA, and small molecules that together can transcribe DNA into RNA and translate RNA into proteins. Multiple commercial implementations of PURE are available, but we recommend PURExpress. 
 
